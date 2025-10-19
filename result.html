@@ -400,7 +400,7 @@
                         📱 <span class="ml-2">BAIXE SEU CARD PARA COMPARTILHAR</span>
                     </span>
                     <div class="flex items-center mt-1">
-                        <span class="text-xs text-cyan-200 mr-2">Use o botão abaixo</span>
+                        <span class="text-xs text-cyan-200 mr-2">Click no botão no final da página!</span>
                         <span class="animate-bounce">🔽</span>
                     </div>
             <h3 class="blog-title">Como usar seus resultados para evoluir no treino: 5 dicas práticas</h3>
@@ -432,10 +432,65 @@
             </div>
         </div>
 
+        <!-- 🔥 Bloco de recomendação de produto com carrossel -->
+<div class="blog-card">
+  <h3 class="blog-title">🏋️‍♂️ Recomendação FitCard</h3>
+  <div class="blog-content">
+    <p>Quer melhorar seus resultados nos treinos? Veja este suplemento com excelente avaliação e ótimo custo-benefício:</p>
+
+    <div class="flex flex-col items-center bg-gray-800 rounded-xl p-3 mt-3">
+      
+      <!-- Carrossel de imagens -->
+      <div id="carousel" class="w-full max-w-[250px] rounded-lg shadow-lg mb-3 overflow-hidden">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf3e0df8c6a1a4b48a95a7f36b16c1e69u/Creatina-Monohidratada-Pura-Refil-500g-Dark-Lab.jpg"
+             alt="Produto 1"
+             class="w-full rounded-lg">
+      </div>
+
+      <p class="text-gray-300 text-center text-sm">
+        <strong>Creatina Monohidratada Pura Refil 500g – Dark Lab</strong><br>
+        💸 <span class="text-cyan-400 font-semibold">R$ 104,99</span>  
+        <span class="line-through text-gray-500">R$ 119,99</span>  
+        <span class="text-green-400 font-medium">(13% off)</span>
+      </p>
+
+      <a href="https://s.click.aliexpress.com/e/_c36V4YSx"
+         target="_blank"
+         rel="nofollow sponsored"
+         class="mt-3 inline-block w-full bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold py-3 rounded-lg text-center transition-all duration-200">
+         🔗 Comprar no AliExpress
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Script para alternar imagens a cada 1s -->
+<script>
+  const imagens = [
+    "https://fitcard.hosttly.com/assets/img/A53df153c7002407194f74722065a10449.jpg",
+    "https://fitcard.hosttly.com/assets/img/A231ca54dd7e24148b8324fd868e2a8c1J.jpg",
+    "https://fitcard.hosttly.com/assets/img/A299f90feb1504c30a8afbfc6200a3f2bl.jpg",
+    "https://fitcard.hosttly.com/assets/img/A1621fc6b68c94762926000e1819346d8n.jpg"
+
+  ];
+
+  let index = 0;
+  const carousel = document.getElementById("carousel").querySelector("img");
+
+  setInterval(() => {
+    index = (index + 1) % imagens.length;
+    carousel.src = imagens[index];
+  }, 3000); // 1000ms = 1 segundo
+</script>
+
+
+
         <div class="space-y-3">
             <button id="baixarImagem" class="btn-mobile btn-download">📥 Baixar Resultado</button>
             <button id="novoCalculo" class="btn-mobile btn-new">🔄 Novo cálculo</button>
         </div>
+
+        
     </main>
 
     <footer class="text-center py-6 text-gray-400 text-xs px-4 border-t border-gray-700 mt-4">
